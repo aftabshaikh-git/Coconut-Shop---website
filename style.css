@@ -1,0 +1,136 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7ed;
+    color: #243b2b;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: white;
+}
+
+header h2 {
+    color: #176b3a;
+}
+
+nav a {
+    text-decoration: none;
+    color: #243b2b;
+    margin-left: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background-color: #dcebd2;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #176b3a;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #176b3a;
+    color: white;
+    padding: 14px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+#products,
+#contact {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.product {
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 230px;
+    border-radius: 12px;
+}
+
+.price {
+    color: #176b3a;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #243b2b;
+    color: white;
+}
+
+.product {
+    box-sizing: border-box;
+    vertical-align: top;
+    max-width: 100%;
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0 6px;
+    }
+
+    .hero {
+        padding: 55px 16px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+#orderButton {
+    background-color: #168c48;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#orderButton:hover {
+    background-color: #116b36;
+}
+
